@@ -23,8 +23,9 @@ def get_openai_client():
 if __name__ == '__main__':
     client = get_openai_client()
     rows = bom_parsers.parse_csv("tests/LCSC.csv")
-    c = bom_parsers.lcsc_parser(rows)
-    bom_parsers.ai_parser(c['Other'][0], client)
+    c, u = bom_parsers.lcsc_parser(rows)
+    bom_parsers.ai_parser_unsafe(u, client)
+    print(c['Other'][3])
     # print(c['Other'][0])
     # db = get_component_db()
     # utils.add_components_from_parsed_bom(db, c)
