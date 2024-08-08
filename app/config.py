@@ -1,0 +1,2 @@
+APP_DB_NAME = 'PartsBin'
+COMPONENT_COLLECTION_NAME = 'components'
