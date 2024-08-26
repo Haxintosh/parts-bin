@@ -12,6 +12,8 @@ class Component(BaseModel):
     sub_category: str
     qty: int
     data: Optional[Dict[str, str]] = None
+    parse_type: Optional[str] = None
+    value: Optional[str] = None
     id : Optional[str] = None # UUID of the component
 
 """

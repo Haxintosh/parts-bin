@@ -1,2 +1,3 @@
 APP_DB_NAME = 'PartsBin'
 COMPONENT_COLLECTION_NAME = 'components'
+HASH_COLLECTION_NAME = 'hashes'
